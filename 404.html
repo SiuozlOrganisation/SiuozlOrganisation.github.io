@@ -7,6 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <link rel="stylesheet" href="./basic.css">
+    <div>
+      <p id="userName">404 - UNCOMPATIBLE</p>
+      <script>
+          var userName = localStorage.getItem("Siuozl_ProfileNAME");
+          window.onload = function() {
+              document.getElementById("userName").innerText = (userName)
+          }
+      </script>
+  </div>
   </head>
   <body>
     <span>OOPS! This page doesn't exist. Please check you typed the right URL. <br><br>Siuozl Organisation: <a href="https://siuozlorganisation.github.io">Main Page</a></span>

@@ -1,62 +1,76 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Siuozl Organisation</title>
-        <link rel="icon" type="image/gif" href="animation.gif">
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DSBNKRVEFF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<head>
+    <title>Siuozl Organisation</title>
+    <link rel="icon" type="image/gif" href="animation.gif">
 
-  gtag('config', 'G-DSBNKRVEFF');
-</script>
-<div>
-    <p id="userName"></p>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DSBNKRVEFF"></script>
     <script>
-        var userName = localStorage.getItem("Siuozl_ProfileNAME");
-            document.getElementById("userName").innerText = (userName);
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DSBNKRVEFF');
     </script>
-    <style>
-        #userName {
-            float: right;
-            font-family: fantasy;
-            font-size: x-small;
-        }
-    </style>
-</div>
-    </head>
-    <body>
-        <h2>Siuozl Organisation</h2>
-        <h4>Welcome! Go ahead and choose a page to go to. It's all free!</h4>
-        <div title="Siuozl Books">
-            <a href="/books/">
-                <img src="books.png" alt="Siuozl Books Logo" width="25%" height="25%">
-            </a>
-            <a href="/watch/">
-                <img src="watch.png" alt="Siuozl Watch Gif" width="25%" height="25%">
-            </a>
-            <a href="/fun-city/Profile-Save/">
-                <img src="accCreator.png" alt="Siuozl Account Creator" width="25%" height="25%">
-            </a>
-            <a href="/fun-city/notes/">
-                <img src="notes.png" alt="Siuozl Notes Logo" width="25%" height="25%">
-            </a>
-        </div>
-        <SiuozlFrame type="logo" onclick="siuozlLogo()">
-            <img src="siuozl.png" alt="Siuozl Logo" id="siuozl_logo">
-            <style>
-                #siuozl_logo {
-                    height: 5%;
-                    width: 5%;
+    <div>
+        <p id="userName"></p>
+        <script>
+            var userName = localStorage.getItem("Siuozl_ProfileNAME");
+            document.getElementById("userName").innerText = (userName);
+        </script>
+        <style>
+            #userName {
+                float: right;
+                font-family: fantasy;
+                font-size: x-small;
+            }
+        </style>
+    </div>
+</head>
+
+<body>
+    <h2>Siuozl Organisation</h2>
+    <h4>Welcome! Go ahead and choose a page to go to. It's all free!</h4>
+    <div title="Siuozl Books">
+        <a href="/books/">
+            <img src="books.png" alt="Siuozl Books Logo" width="25%" height="25%">
+        </a>
+        <a href="/watch/">
+            <img src="watch.png" alt="Siuozl Watch Gif" width="25%" height="25%">
+        </a>
+        <a href="/fun-city/Profile-Save/">
+            <img src="accCreator.png" alt="Siuozl Account Creator" width="25%" height="25%">
+        </a>
+        <a href="/fun-city/notes/">
+            <img src="notes.png" alt="Siuozl Notes Logo" width="25%" height="25%">
+        </a>
+    </div>
+    <SiuozlFrame type="logo" onclick="siuozlLogo()">
+        <img src="siuozl.png" alt="Siuozl Logo" id="siuozl_logo">
+        <style>
+            #siuozl_logo {
+                height: 5%;
+                width: 5%;
+                float: right;
+            }
+
+            #siuozl_logo:hover {
+                height: 7%;
+                width: 7%;
+            }
+        </style>
+        <script>
+            function siuozlLogo() {
+                var siuozlLogoSize = 7
+                while (true) {
+                    siuozlLogoSize = siuozlLogoSize * 2
+                    document.getElementById("siuozl_logo").style = "height: var(siuozlLogoSize); width: var(siuozlLogoSize);"
                 }
-                #siuozl_logo:hover {
-                    height: 7%;
-                    width: 7%;
-                }
-            </style>
-        </SiuozlFrame>
-    </body>
+            }
+        </script>
+    </SiuozlFrame>
+</body>
+
 </html>

@@ -57,13 +57,13 @@
             }
 
             #siuozl_logo:hover {
-                height: 7%;
-                width: 7%;
+                height: var(siuozlLogoSize);
+                width: var(siuozlLogoSize);
             }
         </style>
         <script>
             function siuozlLogo() {
-                var siuozlLogoSize = 7
+                var siuozlLogoSize = 7%
                 while (true) {
                     siuozlLogoSize = siuozlLogoSize * 2
                     document.getElementById("siuozl_logo").style = "height: var(siuozlLogoSize); width: var(siuozlLogoSize);"
